@@ -50,7 +50,7 @@
         "tags": [
           "Auth"
         ],
-        "description": "",
+        "summary": "Fazer login",
         "responses": {
           "200": {
             "description": "OK"
@@ -80,7 +80,7 @@
         "tags": [
           "Usuarios"
         ],
-        "description": "",
+        "summary": "Buscar todos os usuarios",
         "responses": {
           "200": {
             "description": "OK"
@@ -91,7 +91,7 @@
         "tags": [
           "Usuarios"
         ],
-        "description": "",
+        "summary": "Adicionar um usuario",
         "responses": {
           "201": {
             "description": "Created"
@@ -139,7 +139,7 @@
         "tags": [
           "Usuarios"
         ],
-        "description": "",
+        "summary": "buscar um usuario por id",
         "parameters": [
           {
             "name": "id",
@@ -160,7 +160,7 @@
         "tags": [
           "Usuarios"
         ],
-        "description": "",
+        "summary": "atualizar um usuario",
         "parameters": [
           {
             "name": "id",
@@ -216,7 +216,7 @@
         "tags": [
           "Usuarios"
         ],
-        "description": "",
+        "summary": "arquivar/desarquivar um usuario",
         "parameters": [
           {
             "name": "id",
@@ -237,7 +237,7 @@
         "tags": [
           "Usuarios"
         ],
-        "description": "",
+        "summary": "deletar um usuario",
         "parameters": [
           {
             "name": "id",
@@ -260,7 +260,7 @@
         "tags": [
           "Autores"
         ],
-        "description": "",
+        "summary": "buscar todos os autores",
         "responses": {
           "200": {
             "description": "OK"
@@ -271,7 +271,7 @@
         "tags": [
           "Autores"
         ],
-        "description": "",
+        "summary": "adicionar um autor",
         "responses": {
           "201": {
             "description": "Created"
@@ -304,7 +304,7 @@
         "tags": [
           "Autores"
         ],
-        "description": "",
+        "summary": "buscar um autor por id",
         "parameters": [
           {
             "name": "id",
@@ -325,7 +325,7 @@
         "tags": [
           "Autores"
         ],
-        "description": "",
+        "summary": "atualizar um autor",
         "parameters": [
           {
             "name": "id",
@@ -366,7 +366,7 @@
         "tags": [
           "Autores"
         ],
-        "description": "",
+        "summary": "arquivar/desarquivar um autor",
         "parameters": [
           {
             "name": "id",
@@ -389,7 +389,7 @@
         "tags": [
           "Categorias"
         ],
-        "description": "",
+        "summary": "buscar todos as categorias",
         "responses": {
           "200": {
             "description": "OK"
@@ -400,7 +400,7 @@
         "tags": [
           "Categorias"
         ],
-        "description": "",
+        "summary": "adicionar uma categoria",
         "responses": {
           "201": {
             "description": "Created"
@@ -430,7 +430,7 @@
         "tags": [
           "Categorias"
         ],
-        "description": "",
+        "summary": "buscar uma categoria por id",
         "parameters": [
           {
             "name": "id",
@@ -451,7 +451,7 @@
         "tags": [
           "Categorias"
         ],
-        "description": "",
+        "summary": "atualizar uma categoria",
         "parameters": [
           {
             "name": "id",
@@ -489,7 +489,7 @@
         "tags": [
           "Categorias"
         ],
-        "description": "",
+        "summary": "arquivar/desarquivar uma categoria",
         "parameters": [
           {
             "name": "id",
@@ -512,7 +512,7 @@
         "tags": [
           "Livros"
         ],
-        "description": "",
+        "summary": "buscar todos os livros",
         "responses": {
           "200": {
             "description": "OK"
@@ -523,7 +523,7 @@
         "tags": [
           "Livros"
         ],
-        "description": "",
+        "summary": "adicionar um livro",
         "responses": {
           "201": {
             "description": "Created"
@@ -571,7 +571,7 @@
         "tags": [
           "Livros"
         ],
-        "description": "",
+        "summary": "buscar um livro por id",
         "parameters": [
           {
             "name": "id",
@@ -592,7 +592,7 @@
         "tags": [
           "Livros"
         ],
-        "description": "",
+        "summary": "atualizar um livro",
         "parameters": [
           {
             "name": "id",
@@ -648,7 +648,7 @@
         "tags": [
           "Livros"
         ],
-        "description": "",
+        "summary": "arquivar/desarquivar um livro",
         "parameters": [
           {
             "name": "id",
@@ -669,7 +669,7 @@
         "tags": [
           "Livros"
         ],
-        "description": "",
+        "summary": "deletar um livro",
         "parameters": [
           {
             "name": "id",
@@ -692,7 +692,7 @@
         "tags": [
           "Exemplares"
         ],
-        "description": "",
+        "summary": "buscar todos os exemplares",
         "responses": {
           "200": {
             "description": "OK"
@@ -703,7 +703,7 @@
         "tags": [
           "Exemplares"
         ],
-        "description": "",
+        "summary": "adicionar um exemplar",
         "responses": {
           "201": {
             "description": "Created"
@@ -742,7 +742,7 @@
         "tags": [
           "Exemplares"
         ],
-        "description": "",
+        "summary": "buscar um exemplar por id",
         "parameters": [
           {
             "name": "id",
@@ -763,7 +763,7 @@
         "tags": [
           "Exemplares"
         ],
-        "description": "",
+        "summary": "atualizar um exemplar",
         "parameters": [
           {
             "name": "id",
@@ -810,7 +810,7 @@
         "tags": [
           "Exemplares"
         ],
-        "description": "",
+        "summary": "arquivar/desarquivar um exemplar",
         "parameters": [
           {
             "name": "id",
@@ -833,7 +833,7 @@
         "tags": [
           "Emprestimos"
         ],
-        "description": "",
+        "summary": "buscar todos os emprestimos",
         "responses": {
           "200": {
             "description": "OK"
@@ -844,7 +844,7 @@
         "tags": [
           "Emprestimos"
         ],
-        "description": "",
+        "summary": "adicionar um emprestimo",
         "responses": {
           "201": {
             "description": "Created"
@@ -877,7 +877,7 @@
         "tags": [
           "Emprestimos"
         ],
-        "description": "",
+        "summary": "buscar um emprestimo por id",
         "parameters": [
           {
             "name": "id",
@@ -900,7 +900,7 @@
         "tags": [
           "Devoluções"
         ],
-        "description": "",
+        "summary": "buscar todas as devolucoes",
         "responses": {
           "200": {
             "description": "OK"
@@ -911,7 +911,7 @@
         "tags": [
           "Devoluções"
         ],
-        "description": "",
+        "summary": "adicionar uma devolucao",
         "responses": {
           "201": {
             "description": "Created"
@@ -944,7 +944,7 @@
         "tags": [
           "Devoluções"
         ],
-        "description": "",
+        "summary": "buscar uma devolucao por id",
         "parameters": [
           {
             "name": "id",
