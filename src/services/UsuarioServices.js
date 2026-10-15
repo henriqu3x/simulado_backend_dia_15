@@ -55,6 +55,14 @@ class UsuarioServices {
                throw new AppError("Insira o perfil do usuario",400);
                
           }
+          if (isNaN(usuario.cpf)) {
+               throw new AppError("O cpf do usuario deve conter apenas digitos",400);
+               
+          }
+          if (usuario.cpf.length != 11) {
+               throw new AppError("O cpf do usuario deve conter 11 caracteres",400);
+               
+          }
 
           const verificarCpf = await this.usuario_repositories.buscarPorCpf(usuario)
 
@@ -78,6 +86,16 @@ class UsuarioServices {
           if (!usuario.id) {
                throw new AppError("Insira o id do usuario",400);
                
+          }
+          if (usuario.cpf) {
+               if (isNaN(usuario.cpf)) {
+                    throw new AppError("O cpf do usuario deve conter apenas digitos",400);
+                    
+               }
+               if (usuario.cpf.length != 11) {
+                    throw new AppError("O cpf do usuario deve conter 11 caracteres",400);
+                    
+               }
           }
           
           const verificarId = await this.usuario_repositories.buscarPorId(usuario)

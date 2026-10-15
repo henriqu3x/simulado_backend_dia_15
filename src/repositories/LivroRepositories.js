@@ -80,7 +80,7 @@ class LivroRepositories {
                     data: {
                          isbn: livro.isbn,
                          titulo: livro.titulo,
-                         ano_publicacao: livro.ano_publicacao,
+                         ano_publicacao: parseInt(livro.ano_publicacao),
                          edicao: livro.edicao,
                          editora: livro.editora,
                          categoria_id: livro.categoria_id,
@@ -129,7 +129,7 @@ class LivroRepositories {
                     data: {
                          isbn: livro.isbn,
                          titulo: livro.titulo,
-                         ano_publicacao: livro.ano_publicacao,
+                         ano_publicacao: parseInt(livro.ano_publicacao),
                          edicao: livro.edicao,
                          editora: livro.editora,
                          categoria_id: livro.categoria_id,

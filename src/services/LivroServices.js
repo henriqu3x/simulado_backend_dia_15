@@ -55,6 +55,18 @@ class LivroServices {
                throw new AppError("Insira o autor do livro",400);
                
           }
+          if (livro.isbn.length != 17) {
+               throw new AppError("O isbn do livro deve possuir 17 caracteres",400);
+               
+          }
+          if (isNaN(livro.ano_publicacao)) {
+               throw new AppError("O ano de publicação deve conter apenas numeros",400);
+               
+          }
+          if (livro.ano_publicacao.length != 4) {
+               throw new AppError("O ano de publicação deve conter apenas 4 digitos",400);
+               
+          }
 
           const verificarIsbn = await this.livro_repositories.buscarPorIsbn(livro)
 
@@ -71,6 +83,23 @@ class LivroServices {
           if (!livro.id) {
                throw new AppError("Insira o id do livro",400);
                
+          }
+          if (livro.isbn) {
+               if (livro.isbn.length != 17) {
+                    throw new AppError("O isbn do livro deve possuir 17 caracteres",400);
+                    
+               }
+          }
+          if (livro.ano_publicacao) {
+               if (isNaN(livro.ano_publicacao)) {
+                    throw new AppError("O ano de publicação deve conter apenas numeros",400);
+                    
+               }
+               if (livro.ano_publicacao.length != 4) {
+                    throw new AppError("O ano de publicação deve conter apenas 4 digitos",400);
+                    
+               }
+
           }
           
           const verificarId = await this.livro_repositories.buscarPorId(livro)
